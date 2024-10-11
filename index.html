@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="assests/img/logofooter-orange.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./output.css">
+    <title>Consíndico NodeJs</title>
+
+</head>
+<body>
+    <header id="navbar" class="bg-blue-950 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster sm: text-2x1">Consíndico</div>
+
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-blue-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="nav-link">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#feedback" class="nav-link">Feedback</a>
+                    </li>
+                </ul>
+
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="./assests/img/conf-header.png" alt="condomínio 1" class="w-32">
+                </div>
+
+                <div class="absolute -top-3 left-0.5 rotate- opacity-90 lg:hidden">
+                    <img src="./assests/img/conf-header.png" alt="condomínio 2" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3x1 cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class="relative">
+            <div class="container">
+                <!-- blob 1 -->
+                <div class="w-64 h-64 bg-blue-800 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
+                </div>
+
+                <!-- blob 2 -->
+                <div class="w-64 h-64 bg-blue-800 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0">
+
+                </div>
+
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!-- content -->
+                    <div class="w-full space-y-5 lg:w-1/2">
+                        <h1>
+                            <span class="text-orange-600">Síndico</span> Profissional
+                            <br/>
+                            <br/>
+                            Gestão <span class="text-orange-600">Inteligente</span>,
+                            <br/>
+                            Condomínio <span class="text-orange-600">Tranquilo</span>
+                        </h1>
+
+                        <p class="text-slate-300 font-Lobster">
+                            "O Síndico é um administrador que mesmo com todas as contas ajustadas tem sempre alguém querendo ajustar as contas com ele."
+                        </p>
+
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                            <button class="btn">
+                                <span>Cursos</span>
+                                <i class="ri-home-smile-line"></i>
+                            </button>
+
+                            <button class="btn btn_outline">
+                                <span>Saiba mais</span>
+                                <i class="ri-home-smile-line"></i>
+                            </button>
+                        </div>
+
+                        <p class="text-xs font-Lobster text-slate-300">
+                            Você terá 30 dias gratuito.
+                        </p>
+                        <div class="flex items-center gap-5 text-lg lg:pt-10">
+                            <a href="https://www.instagram.com/consindico/" target="_blank"><i class="ri-instagram-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
+                            <a href="https://wa.link/34cf3m" target="_blank"><i class="ri-whatsapp-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- image -->
+                     <div class="w-full relative lg:w-1/2">
+                        <img src="./assests/img/banner-2.png" alt="home_image">
+
+                        <!-- leaf -->
+                         <div class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-movingY">
+                            <i class="ri-home-smile-line text-orange-600 text-6xl"></i>
+                         </div>
+
+                         <!-- flower -->
+                         <div class="absolute bottom-0 left-0 opacity-30 xl:bottom-12 animate-rotating">
+                            <i class="ri-community-line text-orange-600 text-6xl"></i>
+                         </div>
+
+                         <!-- plant -->
+                         <div class="hidden absolute -top-8 -left-5 opacity-30 lg:block animate-scalingUp">
+                            <i class="ri-building-4-line text-orange-600 text-6xl"></i>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Serviços -->
+        <div class="bg-white text-blue-900 py-20" id="services">
+            <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card 1 -->
+                 <div class="border border-blue-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-presentation-fill text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                          Curso <br>
+                          Completo  
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        A oportunidade que você estava esperando, só para você.
+                    </p>
+                 </div>
+
+                 <!-- card 2 -->
+                 <div class="border border-blue-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-customer-service-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                          Atendimento
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Nosso compromisso é a sua satisfação.
+                    </p>
+                 </div>
+
+                 <!-- card 3 -->
+                 <div class="border border-blue-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-live-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                          Lives  
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Se você quer saber mais sobre, anota aí. Bora sair da caixa e viver o extraordinário!
+                    </p>
+                 </div>
+
+                 <!-- card 4 -->
+                 <div class="border border-blue-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-git-repository-private-fill text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                          Acesso <br/>
+                          Único  
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                          A jornada mais longa começa com um único passo.
+                    </p>
+                 </div>
+            </div>
+        </div>
+        <!-- Sobre -->
+        <section id="about" class="relative overflow-hidden">
+
+            <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="font-Lobster text-orange-600 max-w-3xl text-3xl md:text-4xl xl:text-5xl">Sobre a Empresa</h2> 
+                <br/>
+                <p class="max-w-2xl">Como surgiu a Consíndico</p>
+            </div>
+
+            <div class="container space-y-10 xl:space-x-0">
+                <!-- Item 1 -->
+                 <div class="flex flex-col items-center lg:flex-row gap-5">
+                    <!-- image -->
+                     <div class="w-full lg:w-1/2">
+                        <img src="./assests/img/condominio1.png" alt="Sobre mim" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                     </div>
+
+                     <!-- content -->
+                     <div class="w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                Gestão de Condomínios com <span class="text-orange-600">Excelência e Transparência</span> 
+                                <br/>
+                            </h3>
+                            <p class="text-slate-300 font-Lobster">Oferecemos uma gestão de condomínios que prioriza a excelência e a transparência, garantindo a satisfação e o bem-estar dos moradores.</p>
+                        </div>
+                     </div>
+                 </div>
+
+                 <!-- Item 2 -->
+                 <div class="flex flex-col items-center lg:flex-row gap-5" >
+                    <!-- image -->
+                     <div class="w-full lg:w-1/2">
+                        <img src="./assests/img/condominio2.png" alt="" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                     </div>
+
+                     <!-- content -->
+                     <div class="w-full lg:w-1/2">
+                        <div class="space-y-5">
+                                <h3>
+                                    Administração de Condomínios: <span class="text-orange-600">Eficiente, Transparente e Segura</span>
+                                    <br/>
+                                </h3>
+                                <p class="text-slate-300 font-Lobster">Com uma administração eficiente, transparente e segura, garantimos o bem-estar e a satisfação de todos.
+                            </p>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+
+        <!-- Feedback -->
+        <section id="feedback" class="font-Poppins bg-dark_purple text-white">
+            <div class="flex flex-col items-center text-center py-10">
+                <h5>Feedback</h5>
+                <h1 class="text-4xl w-96 mx-auto leading-normal font-bold mb-12">Read What Others Have to Say</h1>
+            </div>
+        </section>
+
+
+        <!-- contato -->
+        <section id="contato">
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
