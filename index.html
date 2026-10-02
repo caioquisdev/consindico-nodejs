@@ -1,27 +1,35 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Consíndico | Síndico Profissional e Gestão de Condomínios</title>
+  <meta name="description" content="Gestão de condomínios com excelência e transparência. Síndico profissional, cursos e atendimento dedicado. Fale conosco pelo WhatsApp.">
+  <meta property="og:title" content="Consíndico | Síndico Profissional">
+  <meta property="og:description" content="Gestão Inteligente, Condomínio Tranquilo. Conheça nossos serviços e fale conosco.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caioquisdev.github.io/consindico-nodejs/">
+  <meta property="og:image" content="https://caioquisdev.github.io/consindico-nodejs/assests/img/familly.png">
+  <meta property="og:locale" content="pt_BR">
 
   <link rel="shortcut icon" href="assests/img/logofooter-orange.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
   <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="./output.css">
-    <title>Consíndico NodeJs</title>
 
 </head>
 <body>
     <header id="navbar" class="bg-blue-950 fixed w-full top-0 left-0 z-50">
         <nav class="container flex items-center justify-between h-16 sm:h-20">
-            <div class="font-Lobster sm: text-2x1">Consíndico</div>
+            <a href="#home" class="flex items-center gap-2">
+                <img src="assests/img/logofooter-orange.png" alt="Logotipo Consíndico" class="w-9 sm:w-10 logo-blend">
+                <span class="font-Lobster text-2xl sm:text-3xl">Consíndico</span>
+            </a>
 
             <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-blue-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
-                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-8">
                     <li>
                         <a href="#home" class="nav-link">Home</a>
                     </li>
@@ -37,18 +45,14 @@
                     <li>
                         <a href="#feedback" class="nav-link">Feedback</a>
                     </li>
+
+                    <li>
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
                 </ul>
-
-                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
-                    <img src="." alt="" class="w-32">
-                </div>
-
-                <div class="absolute -top-3 left-0.5 rotate- opacity-90 lg:hidden">
-                    <img src="." alt="" class="w-32">
-                </div>
             </div>
 
-            <div class="text-xl sm:text-3x1 cursor-pointer z-50 lg:hidden">
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
                 <i class="ri-menu-4-line" id="hamburger"></i>
             </div>
         </nav>
@@ -74,7 +78,6 @@
                         <h1>
                             <span class="text-orange-600">Síndico</span> Profissional
                             <br/>
-                            <br/>
                             Gestão <span class="text-orange-600">Inteligente</span>,
                             <br/>
                             Condomínio <span class="text-orange-600">Tranquilo</span>
@@ -85,29 +88,29 @@
                         </p>
 
                         <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
-                            <button class="btn">
+                            <a href="#services" class="btn">
                                 <span>Cursos</span>
-                                <i class="ri-home-smile-line"></i>
-                            </button>
+                                <i class="ri-presentation-line"></i>
+                            </a>
 
-                            <button class="btn btn_outline">
+                            <a href="#contato" class="btn btn_outline">
                                 <span>Saiba mais</span>
-                                <i class="ri-home-smile-line"></i>
-                            </button>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
                         </div>
 
                         <p class="text-xs font-Lobster text-slate-300">
                             Você terá 30 dias gratuito.
                         </p>
                         <div class="flex items-center gap-5 text-lg lg:pt-10">
-                            <a href="https://www.instagram.com/consindico/" target="_blank"><i class="ri-instagram-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
-                            <a href="https://wa.link/34cf3m" target="_blank"><i class="ri-whatsapp-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
+                            <a href="https://www.instagram.com/consindico/" target="_blank" rel="noopener" aria-label="Instagram da Consíndico"><i class="ri-instagram-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
+                            <a href="https://wa.me/5577998729737" target="_blank" rel="noopener" aria-label="WhatsApp da Consíndico"><i class="ri-whatsapp-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
                         </div>
                     </div>
 
                     <!-- image -->
                      <div class="w-full relative lg:w-1/2">
-                        <img src="./assests/img/banner-2.png" alt="home_image">
+                        <img src="./assests/img/familly.png" alt="Família feliz em seu condomínio" class="mx-auto">
 
                         <!-- leaf -->
                          <div class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-movingY">
@@ -127,8 +130,14 @@
                 </div>
             </div>
         </section>
+
         <!-- Serviços -->
-        <div class="bg-white text-blue-900 py-20" id="services">
+        <section id="services" class="bg-white text-blue-900">
+            <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="title">Nossos Serviços</h2>
+                <p class="max-w-2xl">Tudo o que o seu condomínio precisa para funcionar em harmonia:</p>
+            </div>
+
             <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <!-- card 1 -->
                  <div class="border border-blue-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
@@ -136,7 +145,7 @@
                         <i class="ri-presentation-fill text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
                           Curso <br>
-                          Completo  
+                          Completo
                         </p>
                     </div>
                     <p class="font-Lobster">
@@ -162,7 +171,7 @@
                     <div class="flex items-center gap-5">
                         <i class="ri-live-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
-                          Lives  
+                          Lives
                         </p>
                     </div>
                     <p class="font-Lobster">
@@ -176,7 +185,7 @@
                         <i class="ri-git-repository-private-fill text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
                           Acesso <br/>
-                          Único  
+                          Único
                         </p>
                     </div>
                     <p class="font-Lobster">
@@ -184,13 +193,13 @@
                     </p>
                  </div>
             </div>
-        </div>
+        </section>
+
         <!-- Sobre -->
         <section id="about" class="relative overflow-hidden">
 
             <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
-                <h2 class="font-Lobster text-orange-600 max-w-3xl text-3xl md:text-4xl xl:text-5xl">Sobre a Empresa</h2> 
-                <br/>
+                <h2 class="title">Sobre a Empresa</h2>
                 <p class="max-w-2xl">Como surgiu a Consíndico:</p>
             </div>
 
@@ -199,15 +208,14 @@
                  <div class="flex flex-col items-center lg:flex-row gap-5">
                     <!-- image -->
                      <div class="w-full lg:w-1/2">
-                        <img src="./assests/img/condominio1.png" alt="Sobre mim" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                        <img src="./assests/img/condominio1.png" alt="Prédio residencial gerenciado pela Consíndico" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                      </div>
 
                      <!-- content -->
                      <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
                             <h3>
-                                Gestão de Condomínios com <span class="text-orange-600">Excelência e Transparência</span> 
-                                <br/>
+                                Gestão de Condomínios com <span class="text-orange-600">Excelência e Transparência</span>
                             </h3>
                             <p class="text-slate-300 font-Lobster">Oferecemos uma gestão de condomínios que prioriza a excelência e a transparência, garantindo a satisfação e o bem-estar dos moradores.</p>
                         </div>
@@ -215,48 +223,43 @@
                  </div>
 
                  <!-- Item 2 -->
-                 <div class="flex flex-col items-center lg:flex-row gap-5" >
+                 <div class="flex flex-col items-center lg:flex-row gap-5">
                     <!-- image -->
                      <div class="w-full lg:w-1/2">
-                        <img src="./assests/img/condominio2.png" alt="" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                        <img src="./assests/img/condominio2.png" alt="Condomínio administrado com eficiência" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                      </div>
 
                      <!-- content -->
                      <div class="w-full lg:w-1/2">
                         <div class="space-y-5">
-                                <h3>
-                                    Administração de Condomínios: <span class="text-orange-600">Eficiente, Transparente e Segura</span>
-                                    <br/>
-                                </h3>
-                                <p class="text-slate-300 font-Lobster">Com uma administração eficiente, transparente e segura, garantimos o bem-estar e a satisfação de todos.
-                            </p>
+                            <h3>
+                                Administração de Condomínios: <span class="text-orange-600">Eficiente, Transparente e Segura</span>
+                            </h3>
+                            <p class="text-slate-300 font-Lobster">Com uma administração eficiente, transparente e segura, garantimos o bem-estar e a satisfação de todos.</p>
                         </div>
                      </div>
                  </div>
             </div>
         </section>
 
-
         <!-- Feedback -->
         <section id="feedback">
             <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
-              <h2 class="font-Lobster text-orange-600 max-w-3xl text-3xl md:text-4xl xl:text-5xl">Feedback</h2>
-              <br>
-              <p class="max-w-2xl">Oque as pessoas falam sobre nós:</p>
+              <h2 class="title">Feedback</h2>
+              <p class="max-w-2xl">O que as pessoas falam sobre nós:</p>
             </div>
-            <br><br>
-          
+
             <div class="container mx-auto px-4">
               <div class="py-12">
                 <ul>
                   <li>
                     <div class="flex flex-col gap-5 bg-blue-600 rounded-md p-6 text-white">
-                      <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                      <p class="font-Lobster">A equipe da Consíndico transformou a rotina do nosso condomínio. Organização, transparência nas contas e um atendimento que faz toda a diferença no dia a dia.</p>
                       <div class="flex items-center gap-5">
-                        <img src="/assests/img/review-48.png" alt="review" class="w-12 h-12 rounded-full">
+                        <img src="./assests/img/review-48.png" alt="Foto de perfil de quem avaliou" class="w-12 h-12 rounded-full">
                         <div>
-                          <p class="font-bold">John Doe</p>
-                          <p>Designer</p>
+                          <p class="font-bold">Maria S.</p>
+                          <p>Síndica</p>
                         </div>
                       </div>
                       <i class="ri-double-quotes-r text-2xl"></i>
@@ -265,20 +268,99 @@
                 </ul>
               </div>
             </div>
-          </section>
-          
-          
+        </section>
 
+        <!-- Contato -->
+        <section id="contato" class="bg-white text-blue-900">
+            <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="title">Fale Conosco</h2>
+                <p class="max-w-2xl">Tem alguma dúvida ou quer conhecer nossos serviços? Envie sua mensagem que responderemos o mais breve possível.</p>
+            </div>
 
-        <!-- contato -->
-        <section id="contato">
+            <div class="container grid grid-cols-1 gap-10 lg:grid-cols-2">
+                <!-- informações -->
+                <div class="space-y-5">
+                    <a href="https://wa.me/5577998729737" target="_blank" rel="noopener" class="contact-card">
+                        <i class="ri-whatsapp-line text-3xl text-green-600"></i>
+                        <div>
+                            <p class="font-bold">WhatsApp</p>
+                            <p class="text-sm text-blue-900/70">(77) 99872-9737</p>
+                        </div>
+                    </a>
 
+                    <a href="https://www.instagram.com/consindico/" target="_blank" rel="noopener" class="contact-card">
+                        <i class="ri-instagram-line text-3xl text-pink-600"></i>
+                        <div>
+                            <p class="font-bold">Instagram</p>
+                            <p class="text-sm text-blue-900/70">@consindico</p>
+                        </div>
+                    </a>
+
+                    <div class="contact-card cursor-default">
+                        <i class="ri-time-line text-3xl text-orange-600"></i>
+                        <div>
+                            <p class="font-bold">Atendimento</p>
+                            <p class="text-sm text-blue-900/70">Segunda a sexta, das 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- formulário -->
+                <form id="contact-form" class="space-y-4 border border-blue-900/15 rounded-md p-6 shadow-lg">
+                    <div>
+                        <label for="nome" class="block text-sm font-bold mb-1">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" class="field" required>
+                    </div>
+
+                    <div>
+                        <label for="telefone" class="block text-sm font-bold mb-1">Telefone <span class="font-normal text-blue-900/50">(opcional)</span></label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(77) 99999-9999" class="field">
+                    </div>
+
+                    <div>
+                        <label for="mensagem" class="block text-sm font-bold mb-1">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" class="field resize-none" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn w-full bg-green-600 border-green-600 hover:opacity-90">
+                        <span>Enviar via WhatsApp</span>
+                        <i class="ri-whatsapp-line"></i>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-blue-950 border-t border-white/10">
+        <div class="container py-12 flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:text-left">
+            <a href="#home" class="flex items-center gap-2">
+                <img src="assests/img/logofooter-orange.png" alt="Logotipo Consíndico" class="w-10 logo-blend">
+                <span class="font-Lobster text-2xl">Consíndico</span>
+            </a>
 
+            <ul class="flex flex-col items-center gap-4 sm:flex-row sm:gap-8">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="flex items-center gap-5 text-xl">
+                <a href="https://www.instagram.com/consindico/" target="_blank" rel="noopener" aria-label="Instagram da Consíndico"><i class="ri-instagram-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
+                <a href="https://wa.me/5577998729737" target="_blank" rel="noopener" aria-label="WhatsApp da Consíndico"><i class="ri-whatsapp-line text-slate-300 hover:text-orange-600 duration-300 cursor-pointer"></i></a>
+            </div>
+        </div>
+
+        <div class="container py-6 border-t border-white/10 text-center text-sm text-slate-400">
+            © <span id="year">2026</span> Consíndico. Todos os direitos reservados.
+        </div>
     </footer>
+
+    <!-- botão flutuante de WhatsApp -->
+    <a href="https://wa.me/5577998729737" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp"
+       class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-500 text-white text-3xl flex items-center justify-center shadow-xl hover:scale-110 hover:bg-green-600 duration-300">
+        <i class="ri-whatsapp-line"></i>
+    </a>
 
     <script src="main.js"></script>
 
