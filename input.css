@@ -40,11 +40,6 @@ h3 {
     @apply font-Lobster text-orange-600;
 }
 
-/* logos em PNG com fundo preto ficam com o fundo transparente sobre o azul escuro */
-.logo-blend {
-    mix-blend-mode: screen;
-}
-
 /* button */
 .btn {
     @apply inline-flex items-center justify-center gap-2 border border-orange-600 bg-orange-600 rounded-md px-5 py-2 duration-300;
